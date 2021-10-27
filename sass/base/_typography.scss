@@ -16,22 +16,20 @@ a {
 
 h1 {
 	font-size: $h1-size-m;
-	text-align: center;
+	text-align: left;
 	line-height: 6vw;
 	font-weight: 400;
 
 	@include for-desktop {
-		text-align: left;
 		font-size: $h1-size-dt;
 	}
 }
 
 h2 {
 	font-size: $h2-size-m;
-	text-align: center;
+	text-align: left;
 
 	@include for-desktop {
-		text-align: left;
 		font-size: $h2-size-dt;
 		margin-bottom: 0;
 		margin-top: 2vw;
@@ -53,12 +51,11 @@ h4 {
 p {
 	font-family: $body-font;
 	font-size: $p-size-m;
-	text-align: justify;
+	text-align: left;
 	font-weight: 400;
 	color: $dark-copy;
 
 	@include for-desktop {
-		text-align: left;
 		font-size: $p-size-dt;
 	}
 }

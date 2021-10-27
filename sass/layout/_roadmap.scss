@@ -19,6 +19,9 @@
 	ion-icon {
 		fill: $exile-green;
 		font-size: 5vw;
+		@include for-desktop {
+			font-size: 3vw;
+		}
 	}
 	p {
 		padding-left: 2vw;
