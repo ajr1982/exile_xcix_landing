@@ -1,0 +1,40 @@
+.team {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: "the-team" "brian" "peter" "alan" "mal";
+	grid-row-gap: 10vw;
+	padding-bottom: 15vh;
+
+	@include for-desktop {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "the-team the-team" "brian peter" "alan mal";
+		grid-column-gap: 4vw;
+		grid-row-gap: 4vw;
+	}
+	img {
+		width: 100%;
+		@include for-desktop {
+			width: 50%;
+		}
+	}
+	h2 {
+		grid-area: the-team;
+		padding-left: 5vw;
+	}
+	h4,
+	p {
+		margin: 1vw;
+	}
+	.brian {
+		grid-area: brian;
+	}
+	.peter {
+		grid-area: peter;
+	}
+	.alan {
+		grid-area: alan;
+	}
+	.mal {
+		grid-area: mal;
+	}
+}

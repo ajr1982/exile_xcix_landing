@@ -1,0 +1,41 @@
+nav {
+	width: 100%;
+	height: 4vw;
+
+	@include for-desktop {
+		height: 6vw;
+		padding: 2vw 5.555vw;
+		display: block;
+	}
+
+	ul {
+		display: flex;
+		width: 85vw;
+		justify-content: space-evenly;
+		margin: 6vw auto 2vw 10vw;
+		@include for-desktop {
+			width: 50.833vw;
+			justify-content: space-evenly;
+			margin: 2vw auto;
+		}
+
+		li {
+			font-size: 2.733vw;
+
+			@include for-desktop {
+				font-size: 1.111vw;
+				//padding-left: 2vw;
+			}
+
+			a {
+				color: $dark-copy;
+			}
+
+			a:hover {
+				@include for-desktop {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

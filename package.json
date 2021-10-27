@@ -1,0 +1,27 @@
+{
+  "name": "exile-xcix-nft-landing-page",
+  "version": "1.0.0",
+  "description": "![Landing page for EXILE XCiX NFT collection]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass sass/main.scss css/main.css --watch",
+    "compress-css": "node-sass css/main.css css/main.min.css --output-style compressed",
+    "build-css": "npm-run-all compress-css compile-sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajr1982/exile_xcix_landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajr1982/exile_xcix_landing/issues"
+  },
+  "homepage": "https://github.com/ajr1982/exile_xcix_landing#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}

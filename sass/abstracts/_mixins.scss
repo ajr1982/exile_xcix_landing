@@ -1,0 +1,14 @@
+@mixin element-boundary {
+	border: 1px solid red;
+}
+
+@mixin for-desktop {
+	@media (min-width: $desktop-breakpoint) {
+		@content;
+	}
+}
+
+@mixin gradient-button {
+	background: linear-gradient(90deg, #c4d26f 0.05%, #35a603 100.16%);
+	border-radius: 10px;
+}

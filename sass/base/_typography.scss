@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Strait&family=Teko&display=swap");
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: $heading-font;
+	color: $dark-copy;
+}
+
+ul,
+li,
+a {
+	font-family: $body-font;
+}
+
+h1 {
+	font-size: $h1-size-m;
+	text-align: center;
+	line-height: 6vw;
+	font-weight: 400;
+
+	@include for-desktop {
+		text-align: left;
+		font-size: $h1-size-dt;
+	}
+}
+
+h2 {
+	font-size: $h2-size-m;
+	text-align: center;
+
+	@include for-desktop {
+		text-align: left;
+		font-size: $h2-size-dt;
+		margin-bottom: 0;
+		margin-top: 2vw;
+	}
+}
+
+h3,
+h4 {
+	font-size: $h3-size-m;
+	text-align: left;
+	@include for-desktop {
+		font-size: $h3-size-dt;
+	}
+}
+h4 {
+	color: $exile-green;
+}
+
+p {
+	font-family: $body-font;
+	font-size: $p-size-m;
+	text-align: justify;
+	font-weight: 400;
+	color: $dark-copy;
+
+	@include for-desktop {
+		text-align: left;
+		font-size: $p-size-dt;
+	}
+}
+span {
+	color: $exile-green;
+}

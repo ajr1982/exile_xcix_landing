@@ -1,0 +1,37 @@
+.join-exile {
+	margin-bottom: 3vw;
+}
+.join-copy {
+	flex: 6;
+	p {
+		@include for-desktop {
+			width: 90%;
+		}
+	}
+}
+.join-links {
+	flex: 4;
+
+	.two-col-block.social {
+		padding: 0;
+		margin: 2vw 0;
+		justify-content: center;
+		flex-direction: row;
+	}
+	p {
+		text-align: center;
+		display: block;
+		margin-top: 5vw;
+	}
+
+	a {
+		display: block;
+		margin-top: 1vw;
+		img {
+			margin: 0 auto;
+			@include for-desktop {
+				width: 15vw;
+			}
+		}
+	}
+}

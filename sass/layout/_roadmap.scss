@@ -1,0 +1,27 @@
+.roadmap {
+	border-bottom: 2px solid $exile-green;
+	padding-bottom: 3vw;
+	justify-content: space-between;
+	.ul {
+		list-style-type: none;
+	}
+	.check-wrap {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.check-wrap.double-line {
+		align-items: center;
+		@include for-desktop {
+			align-items: center;
+		}
+	}
+	ion-icon {
+		fill: $exile-green;
+		font-size: 5vw;
+	}
+	p {
+		padding-left: 2vw;
+		text-align: left;
+	}
+}

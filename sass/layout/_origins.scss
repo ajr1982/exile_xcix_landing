@@ -1,0 +1,22 @@
+.origins {
+	border-bottom: 2px solid $exile-green;
+
+	padding: 0 5vw;
+	h1 {
+		margin-bottom: 0;
+	}
+	.no-margin {
+		margin-top: 0;
+	}
+	.two-col-block {
+		align-items: flex-start;
+		justify-content: flex-start;
+		padding: 0 0 3vw 0;
+		margin: 0;
+	}
+	.origins-copy-right {
+		@include for-desktop {
+			padding-left: 3vw;
+		}
+	}
+}
